@@ -4,8 +4,21 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="icon" href="img/logo.jpg" />
-    <title>Lic. Romina Barreiro</title>
+    <link rel="icon" href="../img/logo-etiqueta.png" />
+    <title>Lic. Romina Barreiro | Recetas</title>
+    <meta
+      name="description"
+      content="Nutricionista Romina Barreiro, realiza y confecciona recetas al alcance de todos, cuidando tu salud y la de tus familiares, en esta pagina puedes encontrar diversas recetas, de postres, cenas, meriendas, almuerzos y desayunos, todos deliciosamente saludables"
+    />
+    <meta
+      name="keywords"
+      content="Romina Barreiro, Licenciada en Nutricion,
+    Nutricionista, vida sana, Salud, Montevideo, Uruguay, planes, planes
+    nutricionales, consultas, consultas online, consultas presenciales, dietas,
+    asesoramiento nutricional, Nutricion, receta saludable, Cena saludable,
+    almuerzo saludable, merienda saludable, desayuno nutritivo, postres, menu,
+    menu personalizado, Recetas"
+    />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -19,351 +32,361 @@
       crossorigin="anonymous"
     />
 
-    <link rel="stylesheet" href="../css/index.css" />
+    <link rel="stylesheet" href="../css/main.css" />
   </head>
   <body>
     <!--comienzo de Nav-->
-
-    <header class="col-xs-12">
-      <nav
-        class="navbar navbar-expand-lg navbar-light d-flex flex-column justify-content-center"
-      >
-        <div class="container-fluid justify-content-between">
-          <a class="navbar-brand" href="#">
-            <img
-              src="../img/logo1-test.png"
-              alt=""
-              width="100%"
-              height="38px"
-            />
-          </a>
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarNavAltMarkup"
-            aria-controls="navbarNavAltMarkup"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span class="navbar-toggler-icon"></span>
-          </button>
+    <div class="container-fluid m-0 p-0">
+      <header class="col-xs-12">
+        <nav class="navbar navbar-expand-lg navbar-light">
+          <div class="container-fluid justify-content-between">
+            <a class="navbar-brand" href="../index.html">
+              <img
+                src="../img/logo1-test.png"
+                alt="logo"
+                width="100%"
+                height="38px"
+              />
+            </a>
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarNavAltMarkup"
+              aria-controls="navbarNavAltMarkup"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div
+              class="collapse navbar-collapse justify-content-end"
+              id="navbarNavAltMarkup"
+            >
+              <div class="navbar-nav">
+                <a
+                  class="nav-link active"
+                  aria-current="page"
+                  href="../index.html"
+                >
+                  Inicio
+                </a>
+                <a class="nav-link" href="nosotros.html">Nosotros</a>
+                <a class="nav-link" href="articulos.html">NutriDatos</a>
+                <a class="nav-link" href="recetas.html">Recetas</a>
+                <a class="nav-link" href="contacto.html">Contacto</a>
+              </div>
+            </div>
+          </div>
+        </nav>
+      </header>
+      <!-- termino de nav e inicio de main -->
+      <main class="col-xs-12 p-0">
+        <section class="recetas">
+          <div class="recetas__titulos">
+            <h1 class="recetas__titulo">Recetas</h1>
+            <h2 class="recetas__subtitulo">Saludablemente deliciosas</h2>
+          </div>
           <div
-            class="collapse navbar-collapse justify-content-end"
-            id="navbarNavAltMarkup"
+            id="carouselExampleCaptions"
+            class="carousel slide"
+            data-bs-ride="carousel"
           >
-            <div class="navbar-nav">
-              <a
-                class="nav-link active"
-                aria-current="page"
-                href="../index.html"
-              >
-                Inicio
-              </a>
-              <a class="nav-link" href="nosotros.html">Nosotros</a>
-              <a class="nav-link" href="articulos.html">NutriDatos</a>
-              <a class="nav-link" href="recetas.html">Recetas</a>
-              <a class="nav-link" href="contacto.html">Contacto</a>
+            <div class="carousel-indicators">
+              <button
+                type="button"
+                data-bs-target="#carouselExampleCaptions"
+                data-bs-slide-to="0"
+                class="active"
+                aria-current="true"
+                aria-label="Slide 1"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#carouselExampleCaptions"
+                data-bs-slide-to="1"
+                aria-label="Slide 2"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#carouselExampleCaptions"
+                data-bs-slide-to="2"
+                aria-label="Slide 3"
+              ></button>
             </div>
-          </div>
-        </div>
-      </nav>
-    </header>
-    <!-- termino de nav e inicio de main -->
-    <main class="col-xs-12">
-      <section class="recetas flexbox-column">
-        <div class="recetas__titulos flexbox-column">
-          <h1 class="recetas__titulo">Recetas</h1>
-          <h2 class="recetas__subtitulo">Saludablemente deliciosas</h2>
-        </div>
-        <div
-          id="carouselExampleCaptions"
-          class="carousel slide"
-          data-bs-ride="carousel"
-        >
-          <div class="carousel-indicators">
-            <button
-              type="button"
-              data-bs-target="#carouselExampleCaptions"
-              data-bs-slide-to="0"
-              class="active"
-              aria-current="true"
-              aria-label="Slide 1"
-            ></button>
-            <button
-              type="button"
-              data-bs-target="#carouselExampleCaptions"
-              data-bs-slide-to="1"
-              aria-label="Slide 2"
-            ></button>
-            <button
-              type="button"
-              data-bs-target="#carouselExampleCaptions"
-              data-bs-slide-to="2"
-              aria-label="Slide 3"
-            ></button>
-          </div>
-          <div class="carousel-inner">
-            <div class="carousel-item active">
-              <img
-                src="../img/pollo__al__limon__slide.jpg"
-                class="d-block w-100"
-                alt="pollo al limon"
-              />
-              <div class="carousel-caption d-none d-md-block">
-                <h5>Pollo al limon y hierbas aromaticas.</h5>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img
+                  src="../img/pollo__al__limon__slide.jpg"
+                  class="d-block w-100"
+                  alt="pollo al limon"
+                />
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Pollo al limon y hierbas aromaticas.</h5>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="../img/pollo__garbanzos__slide (1).jpg"
+                  class="d-block w-100"
+                  alt="pollo con garbanzos"
+                />
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Sopa de pollo con garbanzos, jengibre y curcuma.</h5>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="../img/albondigas__slide (1).jpg"
+                  class="d-block w-100"
+                  alt="albondigas de berenjena"
+                />
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Albondigas de berenjena al horno.</h5>
+                </div>
               </div>
             </div>
-            <div class="carousel-item">
-              <img
-                src="../img/pollo__garbanzos__slide (1).jpg"
-                class="d-block w-100"
-                alt="pollo con garbanzos"
-              />
-              <div class="carousel-caption d-none d-md-block">
-                <h5>Sopa de pollo con garbanzos, jengibre y curcuma.</h5>
-              </div>
-            </div>
-            <div class="carousel-item">
-              <img
-                src="../img/albondigas__slide (1).jpg"
-                class="d-block w-100"
-                alt="albondigas de berenjena"
-              />
-              <div class="carousel-caption d-none d-md-block">
-                <h5>Albondigas de berenjena al horno.</h5>
-              </div>
-            </div>
+            <button
+              class="carousel-control-prev"
+              type="button"
+              data-bs-target="#carouselExampleCaptions"
+              data-bs-slide="prev"
+            >
+              <span
+                class="carousel-control-prev-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button
+              class="carousel-control-next"
+              type="button"
+              data-bs-target="#carouselExampleCaptions"
+              data-bs-slide="next"
+            >
+              <span
+                class="carousel-control-next-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Next</span>
+            </button>
           </div>
-          <button
-            class="carousel-control-prev"
-            type="button"
-            data-bs-target="#carouselExampleCaptions"
-            data-bs-slide="prev"
-          >
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-          </button>
-          <button
-            class="carousel-control-next"
-            type="button"
-            data-bs-target="#carouselExampleCaptions"
-            data-bs-slide="next"
-          >
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-          </button>
-        </div>
 
-        <article class="recetas__contenido">
-          <div class="inicio__receta flexbox-column">
-            <h2 class="receta__titulo">
-              Pollo al limon y hierbas aromaticas.
-            </h2>
-            <p class="receta__personas">Para 3 personas</p>
-          </div>
-          <div class="recetas__detalle">
-            <img
-              class="receta__img"
-              src="../img/pollo-hecho.jpg"
-              alt="Pollo al limon con hierbas"
-            />
-            <div>
-              <p class="ingredientes">Ingredientes:</p>
-              <ul class="receta__ingredientes">
-                <li>Suprema de pollo ... 3</li>
-                <li>Hierbas a gusto</li>
-                <li>Limon ... 2</li>
-                <li>Aceite de oliva extra virgen ... 100 ml</li>
-                <li>Vino blanco ... 100 ml</li>
-                <li>Sal y pimienta al gusto</li>
-              </ul>
+          <article class="receta">
+            <div class="receta__inicio">
+              <h2 class="receta__titulo">
+                Pollo al limon y hierbas aromaticas.
+              </h2>
+              <p class="receta__personas">Para 3 personas</p>
             </div>
-          </div>
-          <p class="preparacion__titulo">Preparacion:</p>
-          <div class="receta__preparacion flexbox-column">
-            <p>
-              Limpiamos bien las supremas enteras de las telillas y restos de
-              hueso que puedan tener y las sazonamos con sal y pimienta. Metemos
-              las supremas de pollo en una bolsa grande de congelar con cierre y
-              añadimos 100 ml de aceite y 100 ml de vino blanco.
-            </p>
-            <p>
-              Picamos las hierbas de nuestro gusto -yo utilicé albahaca, perejil
-              y cilantro, pero podéis usar cebollino, mejorana, salvia o las que
-              más os gusten- y las introducimos también en la bolsa de congelar.
-              Finalmente cortamos dos limones en rodajas y los introducimos
-              también.
-            </p>
-            <p>
-              Cerramos la bolsa, sacamos el aire y masajeamos para que los
-              limones y las hierbas se distribuyan bien entre las supremas.
-              Antes de cocinarlo, dejamos el pollo marinando entre dos y cuatro
-              horas dentro de la nevera, para que todos los sabores impregnen
-              las supremas.
-            </p>
-            <p>
-              En una sartén que aguante bien el fuego, ponemos dos cucharadas de
-              aceite de oliva y comenzamos a dorar el pollo que retiramos de la
-              marinada. Cuando demos la vuelta a las supremas tras unos siete
-              minutos, añadimos también a la sartén la marinada y tapamos con
-              una tapa de cacerola, dejando que las supremas terminen de
-              cocinarse por dentro durante otros seis o siete minutos.
-            </p>
-            <p>
-              Así nos quedaran bien cocinadas, doradas por fuera y muy jugosas
-              por dentro. Las llevamos a la mesa en la misma sartén o skillet
-              donde las hemos cocinado para servirlas en cada plato.
-            </p>
-          </div>
-          <div class="receta__fotopreparacion">
-            <img src="../img/Pollo-en-sarten.jpg" alt="Preparacion del pollo" />
-          </div>
-        </article>
-        <article class="recetas__contenido">
-          <div class="inicio__receta">
-            <h2 class="receta__titulo">
-              Sopa de pollo con garbanzos, jengibre y curcuma.
-            </h2>
-            <p class="receta__personas">Para 4 personas</p>
-          </div>
-          <div class="recetas__detalle">
-            <img
-              class="receta__img"
-              src="../img/receta-garbanzo.jpg"
-              alt="sopa de pollo con garbanzos"
-            />
-            <div>
-              <p class="ingredientes">Ingredientes:</p>
-              <ul class="receta__ingredientes">
-                <li>Suprema de pollo ... 550gr</li>
-                <li>Dientes de ajo ... 2</li>
-                <li>Genjibre ... 20gr</li>
-                <li>Curcuma en polvo ... 1 cucharadita</li>
-                <li>Caldo de pollo ... 1L</li>
-                <li>Morron rojo pequeño ... 1</li>
-                <li>Cebolla de verdeo ... 3</li>
-                <li>Zanahoria ... 1</li>
-                <li>Garbanzos cocidos ... 400gr</li>
-                <li>Perejil o cilantro</li>
-                <li>Aceite de Oliva extra virgen</li>
-                <li>Pimienta negra molida</li>
-                <li>Sal</li>
-              </ul>
+            <div class="recetas__detalle">
+              <img
+                class="receta__img"
+                src="../img/pollo-hecho.jpg"
+                alt="Pollo al limon con hierbas"
+              />
+              <div>
+                <p class="ingredientes">Ingredientes:</p>
+                <ul class="receta__ingredientes">
+                  <li>Suprema de pollo ... 3</li>
+                  <li>Hierbas a gusto</li>
+                  <li>Limon ... 2</li>
+                  <li>Aceite de oliva extra virgen ... 100 ml</li>
+                  <li>Vino blanco ... 100 ml</li>
+                  <li>Sal y pimienta al gusto</li>
+                </ul>
+              </div>
             </div>
-          </div>
-          <p class="preparacion__titulo">Preparacion:</p>
-          <div class="receta__preparacion">
-            <p>
-              Pelar y picar muy finos o rallar el jengibre y los ajos. Calentar
-              un par de cucharadas de aceite en una olla o cazuela amplia, a
-              fuego suave, y cocinar estos ingredientes junto con la cúrcuma,
-              sin dejar que se tuesten. Añadir el caldo y dejar que se infusione
-              unos pocos minutos.
-            </p>
-            <p>
-              Secar las pechugas con papel de cocina, limpiar de posibles restos
-              de grasa o hueso y cortar por la mitad longitudinal para que no
-              sean tan grandes. Añadir a la olla, llevar a ebullición, tapar y
-              cocer bajando el fuego unos 15-20 minutos, hasta que el pollo esté
-              cocinado por dentro.
-            </p>
-            <p>
-              Aprovechar para lavar y picar en cubitos pequeños el pimiento y la
-              zanahoria, previamente pelada, y en rodajas finas la cebolla de
-              verdero (o cebolleta tierna muy fina, los tallos). Sacar el pollo
-              con cuidado y desmenuzar con dos tenedores en piezas de un bocado,
-              o picar a cuchillo.
-            </p>
-            <p>
-              Devolver el pollo troceado a la olla junto con las verduras,
-              remover e incorporar también los garbanzos escurridos y
-              enjuagados. Tapar y cocinar unos 10-15 minutos más, o hasta que
-              las verduras estén al punto deseado. Probar y ajustar de sal y
-              pimienta, si es necesario. Se puede reducir el caldo cociendo unos
-              minutos destapado, o añadir algo más de líquido o agua si la
-              preferimos más caldosa.
-            </p>
-          </div>
-          <div class="receta__fotopreparacion">
-            <img
-              src="../img/receta-garbanzo-preparacion.jpg"
-              alt="Preparacion sopa"
-            />
-          </div>
-        </article>
-        <article class="recetas__contenido">
-          <div class="inicio__receta">
-            <h2 class="receta__titulo">
-              Albondigas de berenjena al horno.
-            </h2>
-            <p class="receta__personas">Para 32 unidades</p>
-          </div>
-          <div class="recetas__detalle">
-            <img
-              class="receta__img"
-              src="../img/receta-albondigas.jpg"
-              alt="Albondigas de berenjena"
-            />
-            <div>
-              <p class="ingredientes">Ingredientes:</p>
-              <ul class="receta__ingredientes">
-                <li>Berenjenas ... 2</li>
-                <li>Aceite de olvia extra virgen ... 30gr</li>
-                <li>Agua ... 40ml</li>
-                <li>Pan duro ... 180gr</li>
-                <li>Diente de ajo ... 2</li>
-                <li>Oregano ... 2</li>
-                <li>Queso parmesano rallado ... 100gr</li>
-                <li>Huevo ... 1</li>
-                <li>Sal</li>
-                <li>Pimienta negra molida</li>
-              </ul>
+            <p class="preparacion__titulo">Preparacion:</p>
+            <div class="receta__preparacion">
+              <p>
+                Limpiamos bien las supremas enteras de las telillas y restos de
+                hueso que puedan tener y las sazonamos con sal y pimienta.
+                Metemos las supremas de pollo en una bolsa grande de congelar
+                con cierre y añadimos 100 ml de aceite y 100 ml de vino blanco.
+              </p>
+              <p>
+                Picamos las hierbas de nuestro gusto -yo utilicé albahaca,
+                perejil y cilantro, pero podéis usar cebollino, mejorana, salvia
+                o las que más os gusten- y las introducimos también en la bolsa
+                de congelar. Finalmente cortamos dos limones en rodajas y los
+                introducimos también.
+              </p>
+              <p>
+                Cerramos la bolsa, sacamos el aire y masajeamos para que los
+                limones y las hierbas se distribuyan bien entre las supremas.
+                Antes de cocinarlo, dejamos el pollo marinando entre dos y
+                cuatro horas dentro de la nevera, para que todos los sabores
+                impregnen las supremas.
+              </p>
+              <p>
+                En una sartén que aguante bien el fuego, ponemos dos cucharadas
+                de aceite de oliva y comenzamos a dorar el pollo que retiramos
+                de la marinada. Cuando demos la vuelta a las supremas tras unos
+                siete minutos, añadimos también a la sartén la marinada y
+                tapamos con una tapa de cacerola, dejando que las supremas
+                terminen de cocinarse por dentro durante otros seis o siete
+                minutos.
+              </p>
+              <p>
+                Así nos quedaran bien cocinadas, doradas por fuera y muy jugosas
+                por dentro. Las llevamos a la mesa en la misma sartén o skillet
+                donde las hemos cocinado para servirlas en cada plato.
+              </p>
             </div>
-          </div>
-          <p class="preparacion__titulo">Preparacion:</p>
-          <div class="receta__preparacion">
-            <p>
-              Lavamos bien las berenjenas y las cortamos en dados de unos tres
-              cm de grosor. Añadimos al vaso del robot y troceamos seis
-              segundos, velocidad 4. Bajamos los restos de las paredes y
-              repetimos. Añadimos el aceite y sofreímos seis minutos,
-              temperatura Varoma, velocidad 1. Incorporamos el agua y
-              programamos otros seis minutos, 100ºC, velocidad 1. Troceamos tres
-              segundos en velocidad 5, pasamos la mezcla a una fuente y dejamos
-              enfriar.
-            </p>
-            <p>
-              Pelamos los dientes de ajo. Retiramos las hojas de los tallos del
-              perejil y el orégano, desechando estos últimos. Trituramos junto
-              con el pan seco y el queso rallado, 10 segundos en velocidad 10.
-              Añadimos el huevo, la carne de las berenjenas y salpimentamos al
-              gusto. Mezclamos 30 segundos, giro a la izquierda y velocidad 3.
-            </p>
-            <p>
-              Engrasamos una fuente apta para horno y vamos colocando en ella
-              bolitas de la mezcla. La masa es ligeramente pegajosa, así que
-              puede que necesitemos enjuagarnos las manos un par de veces
-              durante el proceso. Cocemos las albóndigas en horno precalentado a
-              200ºC durante 20 minutos, con calor arriba y abajo. Dejamos
-              reposar unos minutos antes de servir con nuestra salsa y
-              guarnición favoritas.
-            </p>
-          </div>
-          <div class="receta__fotopreparacion">
-            <img
-              src="../img/receta-albondigas-preparacion.jpg"
-              alt="Preparacion albondigas de berenjena"
-            />
-          </div>
-        </article>
-      </section>
-    </main>
-    <!-- comienzo footer -->
-    <footer class="col-xs-12 flexbox-row">
-      <p>Copyright 2022 Romina Barreiro, todos los derechos reservados.</p>
-      <p class="footer-derecha">Montevideo, Uruguay</p>
-    </footer>
+            <div class="receta__fotopreparacion">
+              <img
+                src="../img/Pollo-en-sarten.jpg"
+                alt="Preparacion del pollo"
+              />
+            </div>
+          </article>
+          <article class="receta">
+            <div class="receta__inicio">
+              <h2 class="receta__titulo">
+                Sopa de pollo con garbanzos, jengibre y curcuma.
+              </h2>
+              <p class="receta__personas">Para 4 personas</p>
+            </div>
+            <div class="recetas__detalle">
+              <img
+                class="receta__img"
+                src="../img/receta-garbanzo.jpg"
+                alt="sopa de pollo con garbanzos"
+              />
+              <div>
+                <p class="ingredientes">Ingredientes:</p>
+                <ul class="receta__ingredientes">
+                  <li>Suprema de pollo ... 550gr</li>
+                  <li>Dientes de ajo ... 2</li>
+                  <li>Genjibre ... 20gr</li>
+                  <li>Curcuma en polvo ... 1 cucharadita</li>
+                  <li>Caldo de pollo ... 1L</li>
+                  <li>Morron rojo pequeño ... 1</li>
+                  <li>Cebolla de verdeo ... 3</li>
+                  <li>Zanahoria ... 1</li>
+                  <li>Garbanzos cocidos ... 400gr</li>
+                  <li>Perejil o cilantro</li>
+                  <li>Aceite de Oliva extra virgen</li>
+                  <li>Pimienta negra molida</li>
+                  <li>Sal</li>
+                </ul>
+              </div>
+            </div>
+            <p class="preparacion__titulo">Preparacion:</p>
+            <div class="receta__preparacion">
+              <p>
+                Pelar y picar muy finos o rallar el jengibre y los ajos.
+                Calentar un par de cucharadas de aceite en una olla o cazuela
+                amplia, a fuego suave, y cocinar estos ingredientes junto con la
+                cúrcuma, sin dejar que se tuesten. Añadir el caldo y dejar que
+                se infusione unos pocos minutos.
+              </p>
+              <p>
+                Secar las pechugas con papel de cocina, limpiar de posibles
+                restos de grasa o hueso y cortar por la mitad longitudinal para
+                que no sean tan grandes. Añadir a la olla, llevar a ebullición,
+                tapar y cocer bajando el fuego unos 15-20 minutos, hasta que el
+                pollo esté cocinado por dentro.
+              </p>
+              <p>
+                Aprovechar para lavar y picar en cubitos pequeños el pimiento y
+                la zanahoria, previamente pelada, y en rodajas finas la cebolla
+                de verdero (o cebolleta tierna muy fina, los tallos). Sacar el
+                pollo con cuidado y desmenuzar con dos tenedores en piezas de un
+                bocado, o picar a cuchillo.
+              </p>
+              <p>
+                Devolver el pollo troceado a la olla junto con las verduras,
+                remover e incorporar también los garbanzos escurridos y
+                enjuagados. Tapar y cocinar unos 10-15 minutos más, o hasta que
+                las verduras estén al punto deseado. Probar y ajustar de sal y
+                pimienta, si es necesario. Se puede reducir el caldo cociendo
+                unos minutos destapado, o añadir algo más de líquido o agua si
+                la preferimos más caldosa.
+              </p>
+            </div>
+            <div class="receta__fotopreparacion">
+              <img
+                src="../img/receta-garbanzo-preparacion.jpg"
+                alt="Preparacion sopa"
+              />
+            </div>
+          </article>
+          <article class="receta">
+            <div class="receta__inicio">
+              <h2 class="receta__titulo">
+                Albondigas de berenjena al horno.
+              </h2>
+              <p class="receta__personas">Para 32 unidades</p>
+            </div>
+            <div class="recetas__detalle">
+              <img
+                class="receta__img"
+                src="../img/receta-albondigas.jpg"
+                alt="Albondigas de berenjena"
+              />
+              <div>
+                <p class="ingredientes">Ingredientes:</p>
+                <ul class="receta__ingredientes">
+                  <li>Berenjenas ... 2</li>
+                  <li>Aceite de olvia extra virgen ... 30gr</li>
+                  <li>Agua ... 40ml</li>
+                  <li>Pan duro ... 180gr</li>
+                  <li>Diente de ajo ... 2</li>
+                  <li>Oregano ... 2</li>
+                  <li>Queso parmesano rallado ... 100gr</li>
+                  <li>Huevo ... 1</li>
+                  <li>Sal</li>
+                  <li>Pimienta negra molida</li>
+                </ul>
+              </div>
+            </div>
+            <p class="preparacion__titulo">Preparacion:</p>
+            <div class="receta__preparacion">
+              <p>
+                Lavamos bien las berenjenas y las cortamos en dados de unos tres
+                cm de grosor. Añadimos al vaso del robot y troceamos seis
+                segundos, velocidad 4. Bajamos los restos de las paredes y
+                repetimos. Añadimos el aceite y sofreímos seis minutos,
+                temperatura Varoma, velocidad 1. Incorporamos el agua y
+                programamos otros seis minutos, 100ºC, velocidad 1. Troceamos
+                tres segundos en velocidad 5, pasamos la mezcla a una fuente y
+                dejamos enfriar.
+              </p>
+              <p>
+                Pelamos los dientes de ajo. Retiramos las hojas de los tallos
+                del perejil y el orégano, desechando estos últimos. Trituramos
+                junto con el pan seco y el queso rallado, 10 segundos en
+                velocidad 10. Añadimos el huevo, la carne de las berenjenas y
+                salpimentamos al gusto. Mezclamos 30 segundos, giro a la
+                izquierda y velocidad 3.
+              </p>
+              <p>
+                Engrasamos una fuente apta para horno y vamos colocando en ella
+                bolitas de la mezcla. La masa es ligeramente pegajosa, así que
+                puede que necesitemos enjuagarnos las manos un par de veces
+                durante el proceso. Cocemos las albóndigas en horno precalentado
+                a 200ºC durante 20 minutos, con calor arriba y abajo. Dejamos
+                reposar unos minutos antes de servir con nuestra salsa y
+                guarnición favoritas.
+              </p>
+            </div>
+            <div class="receta__fotopreparacion">
+              <img
+                src="../img/receta-albondigas-preparacion.jpg"
+                alt="Preparacion albondigas de berenjena"
+              />
+            </div>
+          </article>
+        </section>
+      </main>
+      <!-- comienzo footer -->
+      <footer class="col-xs-12">
+        <p>Copyright 2022 Romina Barreiro, todos los derechos reservados.</p>
+        <p class="footer-derecha">Montevideo, Uruguay</p>
+      </footer>
+    </div>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"

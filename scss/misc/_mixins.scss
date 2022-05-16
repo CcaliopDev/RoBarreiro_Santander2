@@ -1,0 +1,21 @@
+// Helpers
+.grid-container {
+  display: grid;
+  width: 100%;
+  min-height: 100vh;
+  grid-template-areas:
+    'header'
+    'main'
+    'footer';
+  grid-template-columns: 100vw;
+  grid-template-rows: auto 1fr auto;
+}
+
+// Mixin flexbox
+
+@mixin flexbox($direction, $justify-content, $align-items, $flex: flex) {
+  display: $flex;
+  flex-direction: $direction;
+  justify-content: $justify-content;
+  align-items: $align-items;
+}

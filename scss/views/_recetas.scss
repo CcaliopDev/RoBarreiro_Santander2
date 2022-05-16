@@ -1,0 +1,152 @@
+.recetas {
+  @include flexbox(column, center, center);
+  background-image: url(../img/background-recetas.jpg);
+  background-attachment: fixed;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  color: $color-principal;
+  padding: 4rem 0.5rem 0;
+  &__titulos {
+    @include flexbox(column, flex-start, center);
+    margin-bottom: 3rem;
+  }
+  &__titulo {
+    font-weight: bold;
+    font-size: 2.8em;
+    color: $color-titulos-verde;
+    font-family: 'Satisfy', cursive !important;
+  }
+  &__subtitulo {
+    font-style: italic;
+    color: $color-titulos-verde;
+    font-family: 'Courgette', cursive !important;
+    font-size: 1em;
+    text-align: center;
+  }
+  &__detalle {
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
+
+.receta {
+  padding: 2rem;
+  background-color: $color-bg-negro;
+  backdrop-filter: $blur;
+  border-radius: 6px;
+  margin-bottom: 3rem;
+  position: relative;
+  margin-top: 4rem;
+  &__inicio {
+    @include flexbox(column, flex-start, center);
+  }
+  &__titulo {
+    font-family: 'Satisfy', cursive;
+    font-size: 1.7em;
+    text-align: center;
+  }
+  &__personas {
+    padding-bottom: 2rem;
+    font-size: 1em;
+    font-family: 'Satisfy';
+  }
+  &__ingredientes {
+    padding: 1rem;
+    font-size: 0.8em;
+  }
+  &__img {
+    height: auto;
+    width: 50%;
+  }
+  &__preparacion {
+    @include flexbox(column, flex-start, center);
+    padding-bottom: 2rem;
+    gap: 1rem;
+  }
+  &__fotopreparacion {
+    height: auto;
+    width: 100%;
+    text-align: center;
+  }
+  &__fotopreparacion img {
+    height: auto;
+    width: 60%;
+    text-align: center;
+  }
+}
+.ingredientes {
+  padding-bottom: 1rem;
+  font-weight: bold;
+  font-size: 1em;
+}
+
+.preparacion__titulo {
+  padding-bottom: 1rem;
+  font-weight: bold;
+  font-size: 1.1em;
+}
+
+@media screen and (min-width: 590px) {
+  .recetas {
+    padding-top: 6rem;
+    &__titulos {
+      margin-bottom: 1px;
+    }
+    &__titulo {
+      font-size: 5em;
+    }
+    &__subtitulo {
+      font-size: 1.5em;
+      text-align: center;
+    }
+  }
+  .receta {
+    margin-left: 1rem;
+    margin-right: 1rem;
+    &__titulo {
+      font-size: 2em;
+      text-align: center;
+    }
+    &__personas {
+      font-size: 25px;
+    }
+    &__ingredientes {
+      font-size: 1em;
+    }
+  }
+  .ingredientes {
+    font-size: 1.1em;
+  }
+}
+
+@media screen and (min-width: 880px) {
+  .receta {
+    margin-left: 2rem;
+    margin-right: 2rem;
+  }
+}
+
+@media screen and (min-width: 1050px) {
+  .receta {
+    margin-left: 3rem;
+    margin-right: 3rem;
+    &__inicio {
+      position: relative;
+    }
+    &__img {
+      height: 300px;
+      width: auto;
+    }
+    &__fotopreparacion img {
+      height: auto;
+      width: 40%;
+      text-align: center;
+    }
+  }
+  .recetas__detalle {
+    @include flexbox(row-reverse, space-between, center);
+  }
+}

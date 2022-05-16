@@ -1,0 +1,53 @@
+.planes {
+  @include flexbox(column, flex-start, center);
+  padding: 1rem;
+  margin-bottom: 6rem;
+
+  &-contacto {
+    padding-top: 7rem;
+    background-image: url(../img/bck__contacto.jpg);
+    background-attachment: fixed;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding-bottom: 3rem;
+  }
+  &__titulo {
+    font-weight: bold;
+    font-size: 2.3em;
+    color: $color-titulos;
+    font-family: 'courgette', cursive !important;
+    margin-bottom: 4rem;
+  }
+}
+.premium {
+  @extend .card;
+  box-shadow: 0 6px 10px #b292b9, 0 0 6px #8c7695;
+}
+
+@media screen and (min-width: 590px) {
+  .contacto {
+    width: 50%;
+    &__subtitulo {
+      font-size: 2em;
+    }
+  }
+  .planes {
+    padding: 2rem;
+    margin-bottom: 6rem;
+    &__titulo {
+      font-size: 4em;
+    }
+    &__header {
+      font-size: xx-large;
+    }
+    &__lista__item {
+      font-size: 1em;
+    }
+    &__precios__item,
+    &__links__item {
+      font-size: 1.2em;
+    }
+  }
+}

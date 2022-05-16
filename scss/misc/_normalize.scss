@@ -1,0 +1,118 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Arima Madurai', cursive !important;
+}
+
+// Map font sizes
+$font-s: (
+  h1-desktop: 5em,
+  h2-desktop: 3.5em,
+  h3-desktop: 2.4em,
+  p-desktop: 1.2em,
+  h1-tablet: 4em,
+  h2-tablet: 2.5em,
+  h3-tablet: 2em,
+  p-tablet: 1em,
+  h1-mobile: 3.5em,
+  h2-mobile: 2.8em,
+  h3-mobile: 2.4em,
+  p-mobile: 0.8em,
+);
+
+/* Globales */
+html {
+  font-family: inherit;
+}
+
+body {
+  margin: 0;
+}
+
+h1 {
+  font-size: map-get($font-s, h1-mobile);
+}
+
+h2 {
+  font-size: map-get($font-s, h2-mobile);
+}
+
+h3 {
+  font-size: map-get($font-s, h3-mobile);
+}
+
+p {
+  font-size: map-get($font-s, p-mobile);
+  margin-bottom: 0;
+}
+
+header {
+  background-color: $color-header;
+  font-weight: bolder;
+  width: 100%;
+  top: 0;
+  position: fixed;
+  z-index: 3;
+  backdrop-filter: $blur;
+}
+.card {
+  border-radius: 4px;
+  background: $color-principal;
+  backdrop-filter: $blur;
+  box-shadow: 0 6px 10px rgb(0, 0, 0), 0 0 6px rgb(0, 0, 0);
+  transition: 0.3s transform cubic-bezier(0.155, 1.105, 0.295, 1.12),
+    0.3s box-shadow,
+    0.3s -webkit-transform cubic-bezier(0.155, 1.105, 0.295, 1.12);
+  cursor: pointer;
+  margin: 1rem;
+  &-title {
+    font-size: 1.8em;
+  }
+  &:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.12), 0 4px 8px rgba(0, 0, 0, 0.06);
+  }
+  &-img-top {
+    height: 228px;
+    width: auto;
+  }
+}
+
+//Media Queries Globales
+@media screen and (min-width: 590px) {
+  h1 {
+    font-size: map-get($font-s, h1-tablet);
+  }
+
+  h2 {
+    font-size: map-get($font-s, h2-tablet);
+  }
+
+  h3 {
+    font-size: map-get($font-s, h3-tablet);
+  }
+
+  p {
+    font-size: map-get($font-s, p-tablet);
+  }
+}
+
+@media screen and (min-width: 1050px) {
+  h1 {
+    font-size: map-get($font-s, h1-desktop);
+  }
+
+  h2 {
+    font-size: map-get($font-s, h2-desktop);
+  }
+
+  h3 {
+    font-size: map-get($font-s, h3-desktop);
+  }
+
+  p {
+    font-size: map-get($font-s, p-desktop);
+  }
+}
